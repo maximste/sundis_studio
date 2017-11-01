@@ -1,0 +1,101 @@
+@import "vars"
+
+@media only screen and (max-width : 1200px)
+	.s
+		&-callback
+			background-size: cover
+
+@media only screen and (max-width : 992px)
+	.s-callback
+		&::before
+			width: 100%
+		.callback
+			padding: 12% 0
+
+@media only screen and (max-width : 768px)
+	.main-activities
+		p
+			font-size: 28px
+	.s-about-us-image
+		img
+			width: 300px
+			height: auto
+	.s-instagram
+		ul
+			li
+				width: 200px
+				height: 200px
+
+@media only screen and (max-width : 480px)
+	$logo-width: 180px
+	.logo
+		img
+			width: $logo-width
+	.mm-navbar
+		padding: 0 10px
+		.mm-title
+			img
+				width: $logo-width
+				margin: 10px 0
+	.button
+		padding: 15px 25px
+
+	.header-text
+		margin-left: 20px
+		.main-activities
+			padding: 0
+			margin: 0 10px
+			ul
+				li
+					font-size: 18px
+	.mm-listview
+		> li
+			> a
+				&::before
+					left: 5%
+	
+	.s-services
+		$image-size: 150px
+		.services-image
+			width: $image-size
+			height:	$image-size
+			border-radius: $image-size / 2
+			img
+				width: $image-size
+				height: $image-size
+	.s-about-us
+		img
+			width: 250px
+			height: auto
+	.main-activities
+		p
+			font-size: 23px		
+	.s-instagram
+		ul
+			li
+				width: 120px
+				height: 120px
+
+@media only screen and (max-width : 320px)
+	.button
+		padding: 15px 10px
+	.header-text
+		top: 180px
+		margin-left: 10px
+		.main-activities
+			padding: 0
+			margin: 0 10px
+			p
+				font-size: 20px
+	.review-image
+		img
+			width: 10px
+			height:	150px
+			border: 3px solid $accent-dark
+			border-radius: 75px
+	.s-instagram
+		ul
+			padding: 5px
+			li
+				width: 100px
+				height: 100px
